@@ -68,8 +68,14 @@ console.log(Math.min(2,34,56,2,45,7,2,1)); //1
 console.log(Math.max(87,2,3,5,7,89,6,23)); //89
 
 
-
 console.log(Math.random()); //Randomly it will change the value..
 
 console.log((Math.random()*10) + 1 ); 
 
+console.log(Math.floor(Math.random()*10) + 1);
+
+
+const min = 10;
+const max = 20;
+
+console.log(Math.floor(Math.random() * (max - min * 1)) + min);
