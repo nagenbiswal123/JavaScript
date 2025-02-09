@@ -59,10 +59,6 @@ console.log(newArr);  //3,34,34,Nagen,Biswal,7,43
 console.log(typeof newArr); //String
 
 
-
-
-
-
 console.log("+++++++++++++++++++++++++++++++++");
 
 // Slice, Splice 
