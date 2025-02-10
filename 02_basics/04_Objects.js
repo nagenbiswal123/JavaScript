@@ -62,7 +62,6 @@ console.log(obj3); // { '1': 'a', '2': 'b', '3': 'c', '4': 'd' }
 
 
 
-
 //Database values.
 
 const users = [{
@@ -97,3 +96,73 @@ console.log(tinderUser.hasOwnProperty('loggedIn')); //true
 
 
 console.log(tinderUser.hasOwnProperty('isloggedIn'));  //false
+
+
+// Desctrcuturing ///
+
+const course = {
+    conursename : "JS in hindi",
+    price : "1999",
+    courseInstrucctor : "Nagen Biswal"
+}
+
+
+// course.courseInstrucctor.
+
+// const {courseInstrucctor} = course
+// const {conursename} = course
+// const {price} = course
+
+// console.log(courseInstrucctor);   // hindic
+// console.log(conursename);         // JS in hindi
+// console.log(price);               // 1999
+
+
+const {courseInstrucctor : instructor} = course
+const {conursename : name} = course
+const {price} = course
+
+console.log(instructor); // Nagen Biswal
+
+console.log(price);     // 1999
+
+// Methods
+
+// const navbar = ({company})  => {
+
+
+// }
+
+
+// navbar(company = "stripe")
+
+
+
+
+// API's Concept 
+// JSON File
+
+// {
+//     //Json file
+//     "name" : "nagen",
+//     "course" : "Hindi",
+//     "price" : "234"
+// }
+
+// [
+//     {},
+//     {},
+//     {},
+//     {}
+// ]
+
+
+// https://randomuser.me/
+
+
+// URL : - https://api.github.com/users/hiteshchoudhary
+
+
+
+
+
