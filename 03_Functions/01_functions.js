@@ -3,9 +3,7 @@ function sayMyName() {
     console.log("Hi");
     console.log("Hi");
 }
-
 sayMyName()
-
 
 // function addTwoNumber(number1, number2){
 //     console.log(number1 + number2);
@@ -30,7 +28,6 @@ let ans = addTwoNumber(12, 867);
 console.log("Result: ", ans);
 
 
-
 // Scopes 
 // function loginUserMessage(username = "sam") {
 
@@ -52,3 +49,54 @@ function loginUserMessage(username) {
 
 
 console.log(loginUserMessage());
+
+// Shopping Card
+
+
+//...  Rest and spread operator we call it, it depend on work and cretieria
+
+
+//Rest operator here.
+
+function CalculateCartPrice(val1, val2, ...num1) {
+    return num1;
+}
+
+
+console.log(CalculateCartPrice(123, 323, 176 )); //[] 123, 323, 176 ]
+console.log(CalculateCartPrice(123, 323, 176, 897, 567, 4565, 9876 ))
+
+
+
+const user = {
+    username : "Nagen",
+    prices : 199
+
+}
+
+function handleObject(anyobject) {
+
+    console.log(`Username is ${anyobject.username} and price is ${anyobject.price}`);
+    
+}
+
+
+// handleObject(user);
+handleObject({
+    username: " sam",
+    price: 399
+
+})
+
+
+const myNewArray = [2334, 232, 243];
+
+function returnSecondValue(getArray){
+    return getArray[2];
+}
+
+console.log(returnSecondValue(myNewArray)); // 243
+
+
+console.log(returnSecondValue([12,34,465,12]));  //465
+
