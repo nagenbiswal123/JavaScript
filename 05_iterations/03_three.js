@@ -47,3 +47,37 @@ Map(3) {
   }
 
 */
+
+// for (const key of map) {
+//     console.log(key);
+// }
+/*
+Expected Value
+
+[ 'IN', 'India' ]
+[ 'US', 'United state of america' ]
+[ 'FR', 'FRance' ]
+*/
+
+
+for (const [key, value] of map) {
+    console.log(key, ':-', value);
+}
+
+//Expected output:
+
+// IN :- India
+// US :- United state of america
+// FR :- FRance
+
+
+
+const myObject = {
+    'game1' : 'NFS',
+    'game2' : 'Spiderman'
+}
+
+//Object will not with below method for forof 
+// for (const [key, value] of myObject) {
+//     console.log(key, ':-', value);
+// }
